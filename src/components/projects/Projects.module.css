@@ -1,0 +1,96 @@
+.divProjects{
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.divProjects h3{
+    color: white;
+    text-align: start;
+    font-size: 25px;
+    position: relative;
+    width: 50%;
+    margin-right: auto;
+}
+
+.divProjects h3::before{
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 90%;
+    left: 105%;
+    top: 50%;
+    height: 2px;
+}
+
+.divProjects h3::after{
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 15px;
+    left: 100%;
+    top: 30%;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* PROJECT */
+
+.divProjectsMap{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.divProject{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.divProject img{
+    width: 97%;
+    height: 200px;
+    margin: auto;
+    border-radius: 16px;
+}
+
+.divProject h2{
+    color: white;
+}
+
+.divProject h4{
+    color: #4bc5e6;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.divProject h5{
+    color: white;
+    font-size: 16px;
+}
+
+.divProject h6{
+    font-size: 13px;
+    color: #4bc5e6;
+    font-family: 'Electrolize', sans-serif;
+    text-align: left;
+}
+
+.divProject a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.divProject a ion-icon{
+    font-size: 25px;
+}

@@ -1,0 +1,80 @@
+.divSkills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.divSkills h2 {
+    margin-right: auto;
+}
+
+/* CONTENEDOR DE SKILLS */
+
+.skills {
+    margin-top: 15px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+/* SECTIONS */
+
+.divSections {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divSections button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.divSections button h4{
+    font-family: 'Electrolize', sans-serif;
+}
+
+.divSections .activeSection h4 {
+    color: #4bc5e6;
+}
+
+.divSections .section h4 {
+    color: white;
+}
+
+/* CONTENEDOR SKILLS */
+
+.sectionSkills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.divContenedorSkill{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.divContenedorSkill img{
+    height: 50px;
+    width: 47px;
+}

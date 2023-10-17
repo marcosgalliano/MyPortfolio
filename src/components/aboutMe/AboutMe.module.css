@@ -1,0 +1,49 @@
+.AboutDiv{
+    padding: 10px;
+}
+
+/* ABOUT ME TEXT */
+
+.AboutDiv h3{
+    color: white;
+    text-align: start;
+    font-size: 25px;
+    position: relative;
+    width: 40%;
+    margin-right: auto;
+}
+
+.AboutDiv h3::before{
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 100%;
+    left: 105%;
+    top: 50%;
+    height: 2px;
+}
+
+.AboutDiv h3::after{
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 15px;
+    left: 100%;
+    top: 30%;
+    height: 15px;
+    border-radius: 50%;
+}
+/* INFO */
+
+.abouth4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.abouth4 h4{
+    color: #ffffff;
+    word-spacing: 10px;
+    font-family: 'Electrolize', sans-serif;
+}
