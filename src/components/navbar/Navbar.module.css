@@ -1,4 +1,4 @@
-.divNavBar{
+.divNavBar {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.presentation{
+.presentation {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -15,25 +15,27 @@
     gap: 10px;
 }
 
-.presentation h2{
+.presentation h2 {
     color: white;
     font-size: 40px;
 }
 
-.presentation span{
+.presentation span {
     font-weight: 500;
     font-size: 30px;
     animation: changeColor 1s infinite;
 }
 
 @keyframes changeColor {
-    0%{
+    0% {
         color: #4692A7;
     }
-    50%{
-        color: #4bc5e6;
+
+    50% {
+        color: #66dafa;
     }
-    100%{
+
+    100% {
         color: #4692A7;
     }
 }
@@ -41,7 +43,11 @@
 
 /* BUTTON */
 
-.presentation button{
+.idButtons {
+    display: flex;
+}
+
+.presentation button {
     width: 35%;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +61,7 @@
 
 /* LINKS */
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -64,13 +70,61 @@
     padding: 10px;
 }
 
-.icons ion-icon{
+.icons ion-icon {
     font-size: 28px;
     color: white;
 }
 
-.icons a{
+.icons a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media(min-width:880px) {
+
+    .idButtons {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 15px;
+    }
+
+    .idButtons button {
+        width: 20%;
+        margin: 0;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 99999999999999;
+    }
+
+    .idButtons button:hover {
+        color: white;
+    }
+
+    .idButtons button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0%;
+        left: 0;
+        background-color: #7b3ca5;
+        z-index: -1;
+        transition: 0.6s;
+        opacity: 0.5;
+    }
+
+    .idButtons button:hover::before {
+        width: 100%;
+        opacity: 1;
+    }
+
 }

@@ -52,9 +52,9 @@ const MySkills = () => {
         </div>
         <div className={style.sectionSkills}>
           {section === "front" ? (
-            frontSkills.map((skill) => {
+            frontSkills.map((skill, index) => {
               return (
-                <div className={style.divContenedorSkill}>
+                <div className={style.divContenedorSkill} key={index}>
                   <h5>{skill.name}</h5>
                   <img src={skill.img} alt="skill" />
                 </div>

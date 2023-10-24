@@ -8,6 +8,12 @@ const NavBar = () => {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const redirectToContact = () => {
+    const aboutSection = document.getElementById("contact");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className={style.divNavBar}>
@@ -16,13 +22,23 @@ const NavBar = () => {
         <span>Marcos José Galliano</span>
         <h2>I'm a Full Stack Developer</h2>
         <div className={style.icons}>
-          <ion-icon name="logo-github"></ion-icon>
-          <ion-icon name="logo-linkedin"></ion-icon>
+          <a href="https://github.com/marcosgalliano" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marcos-galliano-436220223/"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
           <a href={pdf} target="_blank">
             <ion-icon name="id-card-outline"></ion-icon>
           </a>
         </div>
-        <button onClick={redirectToAbout}>More</button>
+        <div className={style.idButtons}>
+          <button onClick={redirectToAbout}>More</button>
+          <button onClick={redirectToContact}>Contact</button>
+        </div>
       </div>
     </div>
   );

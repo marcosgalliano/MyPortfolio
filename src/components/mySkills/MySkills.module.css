@@ -24,6 +24,7 @@
     align-items: center;
     padding: 15px;
     border-radius: 16px;
+    background-color: #7b3ca5;
 }
 
 /* SECTIONS */
@@ -42,7 +43,7 @@
     font-family: 'Electrolize', sans-serif;
 }
 
-.divSections button h4{
+.divSections button h4 {
     font-family: 'Electrolize', sans-serif;
 }
 
@@ -56,7 +57,7 @@
 
 /* CONTENEDOR SKILLS */
 
-.sectionSkills{
+.sectionSkills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,7 +65,7 @@
     height: 100%;
 }
 
-.divContenedorSkill{
+.divContenedorSkill {
     height: 100px;
     width: 100px;
     display: flex;
@@ -74,7 +75,50 @@
     gap: 15px;
 }
 
-.divContenedorSkill img{
+.divContenedorSkill:hover {
+    transform: scale(1.2);
+}
+
+.divContenedorSkill img {
     height: 50px;
     width: 47px;
+}
+
+@media(min-width:880px) {
+    .skills {
+        border: 1px solid #ffffff;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        border-radius: 16px;
+        background-color: #7b3ca5;
+        height: 300px;
+    }
+
+    .divSkills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: white;
+        margin: auto;
+    }
+
+    .divSkills h2 {
+        margin-left: auto;
+    }
+
+    .divSections button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 20px;
+        font-family: 'Electrolize', sans-serif;
+        cursor: pointer;
+    }
+
 }

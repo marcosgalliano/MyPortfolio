@@ -1,0 +1,189 @@
+.contactDiv {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* ABOUT ME TEXT */
+
+.contactDiv h3 {
+    color: white;
+    text-align: start;
+    font-size: 25px;
+    position: relative;
+    width: 40%;
+    margin-right: auto;
+}
+
+.contactDiv h3::before {
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 100%;
+    left: 105%;
+    top: 50%;
+    height: 2px;
+}
+
+.contactDiv h3::after {
+    position: absolute;
+    content: "";
+    background-color: #4bc5e6;
+    width: 15px;
+    left: 100%;
+    top: 30%;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* FORM */
+
+.contactDiv form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(240, 248, 255, 0.156);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.contactDiv form label {
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 500;
+}
+
+/* INPUTS */
+
+.contactDiv form input {
+    border-radius: 7px;
+    background-color: #290e26;
+    border: 1px solid white;
+    padding: 4px;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.contactDiv form input:focus {
+    border: 1px solid #4692a7;
+    outline: none;
+}
+
+.contactDiv form textarea {
+    border-radius: 7px;
+    background-color: #290e26;
+    border: 1px solid white;
+    padding: 4px;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.contactDiv form textarea:focus {
+    outline: none;
+    border: 1px solid #4692a7;
+}
+
+/* INOUT BUTTON */
+
+.inputButton {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Contact icons */
+
+.contactIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.iconContact {
+    color: white;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.iconContact h4 {
+    font-weight: 400;
+}
+
+@media(min-width:880px) {
+    .contactDiv {
+        padding: 60px;
+        margin-top: 50px;
+    }
+
+    .contactDiv h3 {
+        color: #4bc5e6;
+        width: 25%;
+        margin-right: auto;
+        font-size: 40px;
+    }
+
+    .contactDiv h3::after {
+        position: absolute;
+        content: "";
+        background-color: #4bc5e6;
+        width: 15px;
+        left: 100%;
+        top: 36%;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    .contactDiv form {
+        width: 60%;
+    }
+
+    .inputButton {
+        width: 20%;
+        margin: 0;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 99999999999999;
+    }
+
+    .inputButton:hover {
+        color: white;
+    }
+
+    .inputButton::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0%;
+        left: 0;
+        background-color: #7b3ca5;
+        z-index: -1;
+        transition: 0.6s;
+        opacity: 0.5;
+    }
+
+    .inputButton:hover::before {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .contactAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
